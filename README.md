@@ -18,10 +18,11 @@ Swift é um projeto desenvolvido como parte do desafio acadêmico da FIAP em col
 ## 👨‍💻 Funcionalidades em Desenvolvimento
 
 ### 🔐 Login e Cadastro
+- Login
 - Criação de conta
-- Validação de dados de acesso
 
 ### 👤 Perfil do Usuário
+- Validação de dados de acesso
 - Visualização e edição de informações cadastradas:
   - Endereços
   - Telefones
