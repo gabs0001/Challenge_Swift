@@ -1,0 +1,44 @@
+.btn__login-facebook { background-color: #3b5998; }
+
+.btn__login-facebook, .btn__login-google {
+  font-size: var(--font-size-xs);
+  padding: .8rem;
+  width: var(--btn-lg);
+}
+
+.btn__login-facebook span, .btn__login-google span { white-space: nowrap; }
+
+.btn__login-google { background-color: #2c3e50; }
+
+.btn__login-google img { filter: none; }
+
+.btn__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.btn__login {
+  background-color: var(--btn-orange);
+  width: var(--btn-lg);
+  padding: .6rem;
+}
+
+.btn__visitante {
+  background-color: var(--btn-red);
+  width: var(--btn-md);
+  padding: .6rem;
+}
+
+.text__xs a, #text__link {
+  cursor: pointer;
+  color: #000;
+  
+  &:hover { text-decoration: underline; }
+}
+
+/* talvez seja movido para tipografia */
+.text__sm { font-size: var(--font-size-sm); }
+.text__xs { font-size: var(--font-size-xs); }

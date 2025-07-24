@@ -1,0 +1,29 @@
+.main__container { 
+    margin-top: 4rem; 
+    margin-bottom: 6.4rem; 
+}
+
+.main__container_form, .main__container_dados_usuario {
+    border: var(--form-container-border);
+    border-radius: .6rem;
+}
+
+.main__container_dados_usuario {
+    padding: 2rem;
+}
+
+.main__container_acesso {
+    background-color: var(--first-internal-form);
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .4rem;
+}
+
+/* @media (min-width: 768px) {
+
+} */
+
+@media (min-width: 576px) {
+    .main__container_dados_usuario {
+        padding: 4rem;
+    }
+}

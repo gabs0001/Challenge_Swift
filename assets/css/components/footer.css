@@ -1,0 +1,49 @@
+.footer__container {
+    background-color: #383838;
+    color: var(--text-color);
+    margin-top: auto;
+}
+
+.btn__icon_footer {
+  width: 7.2rem;
+  height: 7.2rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.btn__icon_social {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#icon__youtube {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#frase__destaque {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    text-shadow: .1rem .1rem .2rem rgba(0,0,0,0.5);
+}
+
+#texto__destaque { color: #ffc107; }
+
+#texto__action {
+    font-weight: 500; 
+    font-size: var(--font-size-sm);
+}
+
+#footer__container_info {
+    background-color: #707070; 
+    padding: .8rem 0;
+}
+
+#footer__container_info p {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: 0;
+}

@@ -1,0 +1,28 @@
+section > h2, fieldset > h2 { font-weight: 600; }
+
+.divider__acesso {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.btn__salvar_alteracoes {
+    background-color: var(--btn-red);
+    width: var(--btn-lg);
+    padding: .6rem;
+}
+
+.btn__validacao {
+    background-color: var(--btn-orange);
+    width: var(--btn-xl);
+    padding: .8rem .6rem;
+}
+
+@media (min-width: 768px) {
+    label[for="email_cadastrado"], label[for="senha_atual"] {
+        margin-top: .7rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .divider__acesso { width: 93%; }
+}
