@@ -1,0 +1,49 @@
+section > h2 { font-weight: 600; }
+
+#conteudo__principal_dados { margin-top: 2.4rem; }
+
+#primeira__divisoria { background-color: #000; }
+
+.divider__dados_enderecos, 
+.divider__dados_contato, 
+.divider__dados_card, 
+.divider__dados_card_enderecos, 
+.divider__dados_card_contato { 
+    margin: 0 auto; 
+}
+
+.divider__dados_enderecos { width: 100%; }
+
+.divider__dados_card_enderecos { width: 78%; }
+
+.divider__dados_contato { width: 82%; }
+
+.divider__dados_card_contato { width: 88%; }
+
+.card__enderecos, .card__cartoes, .card__telefones {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .4rem;
+}
+
+.card__enderecos, .card__cartoes, .card__telefones { background-color: var(--second-internal-form); }
+
+.card__enderecos p, .card__cartoes p, .card__telefones p { font-size: var(--font-size-sm); }
+
+.icon__color {
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+
+    &:hover { color: #000; }
+}
+
+.btn__adicionar {
+    background-color: var(--btn-orange);
+    width: var(--btn-xl);
+    padding: .6rem;
+}
+
+@media (min-width: 1400px) {
+   #segundo__card {
+    margin-bottom: 10rem !important;
+   }
+}

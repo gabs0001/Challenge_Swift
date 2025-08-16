@@ -1,0 +1,72 @@
+section > h2 { font-weight: 600; }
+
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: .1rem;
+}
+
+.search__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+input[type="search"] { padding-right: 2.5rem; }
+
+.search__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1.8rem;
+    transform: translateY(-50%);
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url('/assets/images/icons/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.card__pedido {
+    background-color: var(--second-internal-form);
+    border: var(--form-container-border);
+    border-radius: .4rem;
+}
+
+#conteudo__principal_dados { margin-top: 2.4rem; }
+
+#primeira__divisoria { background-color: #000; }
+
+.divider__dados_historico_pedidos { 
+    width: 92%; 
+    margin: 0 auto;
+}
+
+.icon__color {
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+
+    &:hover { color: #000; }
+}
+
+.btn__detalhes, .btn__comprar {
+    width: var(--btn-xl);
+    padding: .7rem .6rem;
+    cursor: pointer;
+}
+
+.btn__detalhes { background-color: var(--btn-red); }
+
+.btn__comprar { background-color: var(--btn-orange); }
+
+@media (min-width: 1400px) {
+    input[type="search"] { min-width: 22.8rem !important; }
+}
+
+@media (min-width: 1200px) {
+    input[type="search"] { min-width: 19.6rem; }
+}
+
+@media (min-width: 576px) {
+    .search__wrapper::after { right: 3.4rem; }
+}

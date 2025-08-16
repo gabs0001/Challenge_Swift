@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências de Usuário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="/assets/css/base/base.css">
+    <link rel="stylesheet" href="/assets/css/pages/perfil_usuario/configuracoes.css">
+</head>
+<body>
+    
+    <header id="topo" class="row justify-content-center" role="banner">
+        <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__preferencias">
+            <section class="
+                        d-flex flex-column align-items-center gap-5 
+                        d-sm-flex flex-sm-row justify-content-sm-between
+                        px-md-0 header__container_menu
+            ">
+                <a href="#">
+                    <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
+                </a>
+                <h1 id="titulo__preferencias">Aqui você pode editar suas preferências!</h1>
+            </section>
+        </nav>
+    </header>
+
+    <!-- botões de navegação -->
+    <nav
+        class="
+            d-flex gap-2 mt-5 flex-column 
+            d-sm-flex flex-sm-row justify-content-sm-center gap-sm-5
+            gap-lg-5
+            d-xl-flex justify-content-xl-center gap-xl-3
+            gap-xxl-4
+        "
+        aria-label="Etapas do perfil do usuário"
+    >
+
+        <section 
+            id="sessao__acesso_seguranca" 
+            class="
+                d-flex gap-2 d-sm-flex flex-sm-column
+                d-lg-flex flex-lg-row align-items-lg-center"
+        >    
+            <section class="d-sm-flex justify-content-sm-center">
+                <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
+                    <button 
+                        class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
+                        aria-current="step"
+                        aria-label="Etapa 1: Acesso e Segurança"
+                    >
+                        1
+                    </button>
+                </div>
+            </section>
+
+            <div class="mt-3 mt-sm-0 mt-lg-3 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
+                <p>Acesso e Segurança</p>
+            </div>
+
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+                <hr id="primeira__divisoria" class="botoes__divisoria"/>
+            </div>
+
+        </section>
+
+        <section class="
+            mt-1 ms-5 mt-sm-2 ms-sm-0
+            d-flex d-sm-flex flex-sm-column gap-2
+            d-lg-flex flex-lg-row align-items-lg-center
+            diminuir__opacidade
+        ">
+            <div class="d-sm-flex justify-content-sm-center">
+                <button 
+                    class="
+                        border rounded rounded-pill 
+                        d-flex justify-content-center align-items-center 
+                        botao__contorno-interno
+                    "
+                    aria-label="Etapa 2: Meus Dados"
+                >
+                    2
+                </button>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-end mt-lg-3">
+                <p>Meus Dados</p>
+            </div>
+
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+                <hr class="botoes__divisoria"/>
+            </div>
+
+        </section>
+
+        <section class="
+            mt-1 ms-5 mt-sm-2 ms-sm-0
+            d-flex d-sm-flex flex-sm-column gap-2
+            d-lg-flex flex-lg-row align-items-lg-center
+            diminuir__opacidade
+        ">
+            <div class="d-sm-flex justify-content-sm-center">
+                <button 
+                    class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
+                    aria-label="Etapa 3: Histórico de Pedidos"
+                >
+                    3
+                </button>
+            </div>
+            
+            <div class="d-flex justify-content-center align-items-end mt-lg-3">
+                <p>Histórico de Pedidos</p>
+            </div>
+
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+                <hr class="botoes__divisoria"/>
+            </div>
+
+        </section>
+
+        <section class="
+            mt-1 mt-sm-2 ms-5 ms-sm-0 me-sm-5
+            d-flex d-sm-flex flex-sm-column gap-2
+            d-lg-flex flex-lg-row align-items-lg-center
+            diminuir__opacidade
+        ">
+            <div class="d-sm-flex justify-content-sm-center">
+                <button 
+                    class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
+                    aria-label="Etapa 4: Configurações e Conta"
+                >
+                    4
+                </button>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-end mt-lg-3">
+                <p>Configurações e Conta</p>
+            </div>
+
+        </section>
+
+    </nav>
+    <!-- fim botões de navegação -->
+
+    <main id="conteudo__principal_dados" class="row justify-content-center main__container">
+
+            <section class="row justify-content-center">
+
+                <section class="col-11 col-sm-10 main__container_preferencias">
+
+                    <section class="main__container_meus_pedidos" aria-labelledby="info_preferencias">
+
+                        <div class="d-flex justify-content-between mx-3">
+                            <h2 id="info_preferencias" class="mt-4">Preferências da conta</h2>
+                            <span id="sair" class="mt-4">Sair</span>
+                        </div>
+
+                        <hr class="divider__dados_titulo"/>
+
+                        <!-- cards de pedidos -->
+                        <section class="row justify-content-center">
+
+                            <section class="col-10 col-sm-9 my-4 card__pedido">
+
+                                <h2 class="mt-3">Minhas Informações</h2>
+                                <hr class="mb-2 divider__dados_historico_pedidos"/>
+
+                                <section class="
+                                            d-flex flex-column align-items-center mt-3 mb-4 mx-2
+                                            flex-sm-row justify-content-between
+                                ">    
+                                    <div class="d-flex flex-column mt-3 w-100 flex-sm-row">
+                                        <p class="mb-1 text-center">Nome</p>
+                                        <hr class="divider"/>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <p class="mt-2">José pereira da silva</p>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mb-4 mx-2">
+
+                                    <div class="d-flex flex-column mt-3 w-100">
+                                        <p class="mb-1 text-center">Telefone principal</p>
+                                        <hr class="divider"/>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <p class="mt-2">(11)99999-9999</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mb-4 mx-2">
+
+                                    <div class="d-flex flex-column mt-3 w-100">
+                                        <p class="mb-1 text-center">Endereço principal</p>
+                                        <hr class="divider"/>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <p class="mt-2">Rua de teste, N° 123</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mb-4 mx-2">
+
+                                    <div class="d-flex flex-column mt-3 w-100">
+                                        <p class="mb-1 text-center">Cartão principal</p>
+                                        <hr class="divider"/>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <p class="mt-2">Visa ********1234</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <div class="d-flex justify-content-center my-4">
+                                    <button class="btn__action">Salvar alterações</button>
+                                </div>
+
+                            </section>
+
+                            <section class="col-10 col-sm-7 my-4 card__pedido">
+
+                                <h2 class="mt-3">Histórico de acessos</h2>
+                                <hr class="mb-2 divider__dados_historico_pedidos"/>
+
+                                <section class="d-flex flex-column align-items-center mb-3 mx-2">
+                                    
+                                    <p class="mt-3">14/06/2025 - 14:32</p>
+                                    
+                                    <div class="d-flex">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mb-3 mx-2">
+
+                                    <p class="mt-3">02/05/2025 - 11:10</p>
+
+                                    <div class="d-flex">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mb-3 mx-2">
+
+                                    <p class="mt-3">20/03/2025 - 16:06</p>
+
+                                    <div class="d-flex">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </section>
+
+                                <section class="d-flex flex-column align-items-center mx-2">
+                                    
+                                    <p class="mt-3">08/02/2025 - 12:25</p>
+                                        
+                                    <div class="d-flex">
+                                        <button class="btn__editar mb-3">Editar</button>
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <div class="d-flex justify-content-center my-4">
+                                <button class="btn__action">Encerrar sessões</button>
+                            </div>
+
+                        </section>
+
+                        <!-- fim cards de pedidos -->
+                        
+                    </section>
+
+                </section>
+
+            </section>
+        
+    </main>
+
+    <footer class="d-xl-flex flex-xl-column footer__container">
+        
+        <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
+            
+            <div class="
+                    d-flex justify-content-around align-items-center gap-sm-3
+                    d-xl-flex align-items-xl-center gap-xl-3
+            ">
+                <a href="#topo">
+                    <img src="/assets/images/logo/logo-swift-white.svg" alt="Retornar ao topo da página" class="mb-xl-2 btn__icon_footer"/>
+                </a>
+                <p id="frase__destaque" class="mt-3 mt-sm-3">
+                    <span id="texto__destaque">PREÇO BAIXO:</span> PERFEITO<br> PARA O SEU BOLSO
+                </p>
+            </div>
+
+            <aside
+                class="
+                    d-flex flex-column align-items-center 
+                    d-md-flex flex-md-row gap-md-3
+                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
+                " 
+                aria-describedby="redes__sociais"
+            >
+                <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
+                
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                    <p id="texto__action">
+                        SIGA NOSSAS REDES
+                    </p>
+                </div>
+
+                <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
+                    <ul class="
+                            d-flex align-items-center gap-3 mb-4 mt-md-3
+                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                        <li>
+                            <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
+                                <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/lojaswift" aria-label="Acessar Instagram da Swift">
+                                <img src="/assets/images/logo/logo-instagram-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCx_DnTAyLKfvLj5r788zXng" aria-label="Acessar Youtube da Swift">
+                                <img id="icon__youtube" src="/assets/images/logo/logo-youtube-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+
+        </section>
+
+        <section id="footer__container_info" class="d-xl-flex justify-content-xl-center align-items-xl-center">
+            <p class="text-center px-2">© 2024 - SWIFT CORPORATIVO - 02.914.460/0382-04. TODOS OS DIREITOS RESERVADOS.</p>
+        </section>
+
+    </footer>
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

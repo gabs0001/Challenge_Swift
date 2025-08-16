@@ -3,27 +3,43 @@
     margin-bottom: 6.4rem; 
 }
 
-.main__container_form, .main__container_dados_usuario {
+.main__container_form, 
+.main__container_acesso_usuario, 
+.main__container_dados_usuario, 
+.main__container_historico_pedidos,
+.main__container_preferencias {
     border: var(--form-container-border);
     border-radius: .6rem;
 }
 
-.main__container_dados_usuario {
-    padding: 2rem;
-}
+.main__container_acesso_usuario { padding: 2rem; }
 
-.main__container_acesso {
+.main__container_meus_enderecos { max-width: 94%; }
+
+.main__container_dados_acesso, 
+.main__container_meus_enderecos, 
+.main__container_contato,
+.main__container_meus_pedidos {
     background-color: var(--first-internal-form);
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .4rem;
 }
 
-/* @media (min-width: 768px) {
+.main__container_dados_usuario, 
+.main__container_historico_pedidos,
+.main__container_preferencias { 
+    padding: 2rem; 
+}
 
-} */
+@media (min-width: 1400px) {
+    .main__container_acesso_usuario { padding: 4rem 9rem !important; }
+}
+
+@media (min-width: 992px) {
+    .main__container_meus_enderecos { max-width: 72% !important; }
+}
 
 @media (min-width: 576px) {
-    .main__container_dados_usuario {
-        padding: 4rem;
-    }
+    .main__container_acesso_usuario { padding: 4rem; }
+    .main__container_meus_enderecos { max-width: 80%; }
 }

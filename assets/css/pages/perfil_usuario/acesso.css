@@ -1,5 +1,26 @@
 section > h2, fieldset > h2 { font-weight: 600; }
 
+#conteudo__principal_acesso { margin-top: 2.4rem; }
+
+.botao__contorno-externo {
+    background-color: #D9D9D9; 
+    width: 3.8rem; 
+    height: 3.8rem;
+}
+
+.botao__contorno-interno {
+    background-color: #999191; 
+    width: 3.2rem; 
+    height: 3.2rem;
+    color: var(--text-color); 
+}
+
+#primeira__divisoria { background-color: #000; }
+
+.botoes__divisoria { min-width: 2rem; }
+
+.diminuir__opacidade { opacity: .4; }
+
 .divider__acesso {
     width: 88%;
     margin: 0 auto;
@@ -17,12 +38,24 @@ section > h2, fieldset > h2 { font-weight: 600; }
     padding: .8rem .6rem;
 }
 
+@media(min-width:1400px) {
+    .botoes__divisoria { min-width: 4.2rem; }
+}
+
+@media(min-width:992px) {
+    input[name="email_cadastrado"], input[name="senha_atual"] { width: 23.6rem; }
+    .btn__salvar_alteracoes { width: var(--btn-xl); }
+}
+
 @media (min-width: 768px) {
-    label[for="email_cadastrado"], label[for="senha_atual"] {
-        margin-top: .7rem;
-    }
+    label[for="email_cadastrado"], label[for="senha_atual"] { margin-top: .7rem; }
 }
 
 @media (min-width: 576px) {
     .divider__acesso { width: 93%; }
+    input[name="email_cadastrado"], input[name="senha_atual"] { max-width: 30rem; }
+}
+
+@media (min-width: 320px) {
+    #sessao__acesso_seguranca { margin-left: 2.6rem; }
 }

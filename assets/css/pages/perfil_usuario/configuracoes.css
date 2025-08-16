@@ -1,0 +1,71 @@
+section > h2 { font-weight: 600; }
+
+#sair {
+    color: #e65c00;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.card__pedido {
+    background-color: var(--second-internal-form);
+    border: var(--form-container-border);
+    border-radius: .4rem;
+}
+
+#conteudo__principal_dados { margin-top: 2.4rem; }
+
+#primeira__divisoria { background-color: #000; }
+
+.divider {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.divider__dados_titulo {
+    width: 92%; 
+    margin: 0 auto;
+}
+
+.divider__dados_historico_pedidos { 
+    width: 95%; 
+    margin: 0 auto;
+}
+
+.icon__color {
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+
+    &:hover { color: #000; }
+}
+
+.btn__action {
+    background-color: var(--btn-orange);
+    width: var(--btn-xl);
+    padding: .7rem .2rem;
+    cursor: pointer;
+}
+
+.btn__editar {
+    background-color: var(--btn-red);
+    width: 8rem;
+    height: 2.4rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .card__pedido section { border: none !important; }
+
+    .divider { display: none; }
+
+    .card__pedido section > div {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__pedido section {
+        border: 1px solid rgba(156, 149, 149, .6);
+        border-radius: .2rem;
+    }
+}
