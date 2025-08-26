@@ -57,5 +57,5 @@ section > h2, fieldset > h2 { font-weight: 600; }
 }
 
 @media (min-width: 320px) {
-    #sessao__acesso_seguranca { margin-left: 2.6rem; }
+    #botao__destacado { margin-left: 2.6rem; }
 }

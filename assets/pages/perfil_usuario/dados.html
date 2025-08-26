@@ -44,7 +44,7 @@
     <nav
         class="
             d-flex gap-2 mt-5 flex-column 
-            d-sm-flex flex-sm-row justify-content-sm-center gap-sm-5
+            d-sm-flex flex-sm-row justify-content-sm-center gap-sm-4
             gap-lg-5
             d-xl-flex justify-content-xl-center gap-xl-3
             gap-xxl-4
@@ -52,35 +52,9 @@
         aria-label="Etapas do perfil do usuário"
     >
 
-        <section 
-            id="sessao__acesso_seguranca" 
-            class="d-flex gap-2 d-sm-flex flex-sm-column d-lg-flex flex-lg-row align-items-lg-center"
-        >    
-            <section class="d-sm-flex justify-content-sm-center">
-                <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
-                    <button 
-                        class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
-                        aria-current="step"
-                        aria-label="Etapa 1: Acesso e Segurança"
-                    >
-                        1
-                    </button>
-                </div>
-            </section>
-
-            <div class="mt-3 mt-sm-0 mt-lg-3 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
-                <p>Acesso e Segurança</p>
-            </div>
-
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
-                <hr id="primeira__divisoria" class="botoes__divisoria"/>
-            </div>
-
-        </section>
-
         <section class="
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2 
+            d-flex d-sm-flex flex-sm-column gap-2 ms-sm-5
             d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
@@ -91,18 +65,44 @@
                         d-flex justify-content-center align-items-center 
                         botao__contorno-interno
                     "
-                    aria-label="Etapa 2: Meus Dados"
+                    aria-label="Etapa 1: Acesso e Segurança"
                 >
-                    2
+                    1
                 </button>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
-                <p>Meus Dados</p>
+                <p>Acesso e Segurança</p>
             </div>
 
             <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
+            </div>
+
+        </section>
+
+        <section
+            id="botao__destacado"
+            class="d-flex gap-2 d-sm-flex flex-sm-column mx-sm-3 d-lg-flex flex-lg-row align-items-lg-center mx-lg-0"
+        >    
+            <section class="d-sm-flex justify-content-sm-center mt-lg-1">
+                <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
+                    <button 
+                        class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
+                        aria-current="step"
+                        aria-label="Etapa 2: Meus Dados"
+                    >
+                        2
+                    </button>
+                </div>
+            </section>
+
+            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
+                <p>Meus Dados</p>
+            </div>
+
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+                <hr id="primeira__divisoria" class="botoes__divisoria"/>
             </div>
 
         </section>

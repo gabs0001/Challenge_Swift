@@ -1,0 +1,95 @@
+h2 { font-weight: 600; }
+
+#conteudo__principal_acesso { margin-top: 2.4rem; }
+
+.botao__contorno-externo {
+    background-color: #D9D9D9; 
+    width: 3.8rem; 
+    height: 3.8rem;
+}
+
+.botao__contorno-interno {
+    background-color: #999191; 
+    width: 3.2rem; 
+    height: 3.2rem;
+    color: var(--text-color); 
+}
+
+#primeira__divisoria { background-color: #000; }
+
+.botoes__divisoria { min-width: 6.4rem; }
+
+.diminuir__opacidade { opacity: .4; }
+
+.divider__acesso {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.excluir__pedido img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.resumo__pedido, .programa__fidelidade {
+    border: 1px solid rgba(179, 175, 175, .5);
+    border-radius: .4rem;
+}
+
+.resumo__pedido span {
+    cursor: pointer;
+}
+
+.imagem__produto img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.excluir__item {
+    margin-top: 3rem;
+}
+
+.excluir__item img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+#campo__desconto {
+    border: 1px solid #ddd;
+    width: 40%;
+}
+
+.btn__aplicar_desconto {
+    background-color: var(--btn-red);
+    width: var(--btn-sm);
+    border: none;
+    border-radius: .4rem;
+    padding: .4rem 0;
+}
+
+.divider__pontilhada {
+    border: none;
+    border-top: 1px dotted #000;
+    width: 90%;
+    margin: 1.2rem auto;
+}
+
+.campo__pontos {
+    border: 1px solid #ddd;
+    height: 2rem;
+    width: 5.8rem;
+}
+
+.btn__usar_cashback {
+    background-color: var(--btn-red);
+    width: var(--btn-md);
+    padding: .6rem 0;
+    font-size: var(--font-size-sm);
+    border-radius: 1rem;
+}
+
+.btn__salvar_alteracoes {
+    background-color: var(--btn-orange);
+    width: var(--btn-lg);
+    padding: .8rem 0;
+}
