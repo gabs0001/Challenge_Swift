@@ -1,0 +1,84 @@
+h2 { font-weight: 600; }
+
+input[name="forma_pagamento"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+select[name="cartoes"] {
+    border: var(--input-border);
+    border-radius: .4rem;
+    padding: .4rem .2rem;
+    width: 100%;
+}
+
+#conteudo__principal_acesso { margin-top: 2.4rem; }
+
+.botao__contorno-externo {
+    background-color: #D9D9D9; 
+    width: 3.8rem; 
+    height: 3.8rem;
+}
+
+.botao__contorno-interno {
+    background-color: #999191; 
+    width: 3.2rem; 
+    height: 3.2rem;
+    color: var(--text-color); 
+}
+
+#primeira__divisoria { background-color: #000; }
+
+.botoes__divisoria { min-width: 6.4rem; }
+
+.diminuir__opacidade { opacity: .4; }
+
+.divider__acesso {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.imagem__produto img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.pedido_final {
+    background-color: var(--second-internal-form);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .4rem;
+}
+
+.divider__pontilhada {
+    border: none;
+    border-top: 1px dotted #000;
+    width: 90%;
+    margin: 0 auto 1.2rem;
+}
+
+.btn_qrcode {
+    background-color: var(--btn-red);
+    border-radius: 1rem;
+    padding: .6rem 1.2rem;
+}
+
+.btn_finalizar {
+    background-color: var(--btn-orange);
+    width: var(--btn-xl);
+    padding: .8rem 0;
+}
+
+.info__entrega, .info__retirada {
+    background-color: var(--second-internal-form);
+    border: 1px solid rgba(179, 175, 175, .5);
+    border-radius: .4rem;
+}
+
+.info__entrega span { cursor: pointer; }
+
+.btn__salvar_info {
+    background-color: var(--btn-orange);
+    width: var(--btn-xl);
+    padding: .8rem 0;
+    font-size: 1rem;
+}

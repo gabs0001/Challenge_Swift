@@ -8,12 +8,19 @@
 .main__container_dados_usuario, 
 .main__container_historico_pedidos,
 .main__container_preferencias,
-.main__container_resumo_pedido {
+.main__container_resumo_pedido,
+.main__container_entrega_recebimento,
+.main__container_pagamento {
     border: var(--form-container-border);
     border-radius: .6rem;
 }
 
-.main__container_acesso_usuario, .main__container_resumo_pedido { padding: 2rem; }
+.main__container_acesso_usuario, 
+.main__container_resumo_pedido, 
+.main__container_entrega_recebimento,
+.main__container_pagamento { 
+    padding: 2rem; 
+}
 
 .main__container_meus_enderecos { max-width: 94%; }
 
@@ -21,7 +28,9 @@
 .main__container_meus_enderecos, 
 .main__container_contato,
 .main__container_meus_pedidos,
-.main__container_revisar_pedido {
+.main__container_revisar_pedido,
+.main__container_revisar_info_entrega,
+.main__container_revisar_info_pagamento {
     background-color: var(--first-internal-form);
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .4rem;

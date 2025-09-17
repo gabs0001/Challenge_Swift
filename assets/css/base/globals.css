@@ -96,6 +96,8 @@ li { list-style-type: none; }
 button { 
     border: none;
     border-radius: var(--btn-rounded-border); 
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     color: var(--text-color);
 }
+
+/* media queries de font-size */

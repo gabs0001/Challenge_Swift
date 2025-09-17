@@ -32,6 +32,7 @@ h2 { font-weight: 600; }
 }
 
 .resumo__pedido, .programa__fidelidade {
+    background-color: var(--second-internal-form);
     border: 1px solid rgba(179, 175, 175, .5);
     border-radius: .4rem;
 }
