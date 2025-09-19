@@ -1,11 +1,12 @@
+/* botões de navegação perfil usuário e checkout usuário */
 .botao__contorno-externo {
     background-color: #D9D9D9; 
-    width: 3.8rem; 
+    width: 3.8rem;
     height: 3.8rem;
 }
 
 .botao__contorno-interno {
-    background-color: #999191; 
+    background-color: #999191;
     width: 3.2rem; 
     height: 3.2rem;
     color: var(--text-color); 
@@ -14,6 +15,144 @@
 .botoes__divisoria { min-width: 2rem; }
 
 .diminuir__opacidade { opacity: .4; }
+/* fim botões de navegação perfil usuário e checkout usuário */
+
+/* css compartilhado */
+.btn__login, 
+.btn__comprar,
+.btn__adicionar,
+.btn__action,
+.btn__validacao,
+.btn__salvar_alteracoes,
+.btn_finalizar,
+.btn__salvar_info,
+.btn__salvar {
+    background-color: var(--btn-orange);
+}
+
+.btn__visitante,
+.btn__detalhes,
+.btn__editar,
+.btn__salvar_alteracoes,
+.btn__aplicar_desconto,
+.btn__usar_cashback,
+.btn_qrcode,
+.btn_action {
+    background-color: var(--btn-red);
+}
+
+.btn__visitante,
+.btn__usar_cashback {
+  width: var(--btn-md);
+}
+
+.btn__login-facebook, 
+.btn__login-google,
+.btn__login,
+.btn__salvar_alteracoes,
+.btn__salvar_alteracoes_pedido,
+.btn__salvar {
+    width: var(--btn-lg);
+}
+
+.btn__detalhes, 
+.btn__comprar,
+.btn__adicionar,
+.btn__action,
+.btn__validacao,
+.btn_finalizar,
+.btn__salvar_info {
+    width: var(--btn-xl);
+}
+
+.btn__login, 
+.btn__visitante,
+.btn__adicionar,
+.btn__salvar_alteracoes,
+.btn__salvar { 
+    padding: .6rem; 
+}
+/* fim css compartilhado */
+
+/* login.css */
+.btn__login-facebook { background-color: #3b5998; }
+.btn__login-google { background-color: #2c3e50; }
+
+.btn__login-facebook, .btn__login-google {
+  font-size: var(--font-size-xs);
+  padding: .8rem;
+}
+
+.btn__login-facebook span, .btn__login-google span { white-space: nowrap; }
+
+.btn__login-google img { filter: none; }
+
+.btn__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+/* fim login.css */
+
+/* pedidos.css */
+.btn__detalhes, 
+.btn__comprar { padding: .7rem .6rem; }
+/* fim pedidos.css */
+
+/* configuracoes.css */
+.btn__action { padding: .7rem .2rem; }
+
+.btn__editar {
+    width: 8rem;
+    height: 2.4rem;
+    padding: 0;
+}
+/* fim configuracoes.css */
+
+/* acesso.css */
+.btn__validacao {
+    padding: .8rem .6rem;
+}
+/* fim acesso.css */
+
+/* revisar_pedido.css */
+.btn__aplicar_desconto {
+    width: var(--btn-sm);
+    border: none;
+    border-radius: .4rem;
+    padding: .4rem 0;
+}
+
+.btn__usar_cashback {
+    font-size: var(--font-size-sm);
+    border-radius: 1rem;
+    padding: .6rem 0;
+}
+
+.btn__salvar_alteracoes_pedido {
+    padding: .8rem 0;
+}
+/* fim revisar_pedido.css */
+
+/* pagamento.css */
+.btn_qrcode {
+    border-radius: 1rem;
+    padding: .6rem 1.2rem;
+}
+
+.btn_finalizar, .btn__salvar_info { padding: .8rem 0; }
+
+.btn__salvar_info { font-size: 1rem; }
+/* fim pagamento.css */
+
+/* entrega_e_recebimento.css */
+.btn_action {
+    border-radius: .8rem;
+    padding: .6rem 1.2rem;
+}
+/* fim entrega_e_recebimento.css */
 
 @media(min-width:1400px) {
     .botoes__divisoria { min-width: 4.2rem; }

@@ -23,10 +23,6 @@ label span {
     border-radius: .4rem;
 }
 
-#conteudo__principal_dados { margin-top: 2.4rem; }
-
-#primeira__divisoria { background-color: #000; }
-
 .divider {
     width: 85%;
     margin: 0 auto;
@@ -47,21 +43,6 @@ label span {
     cursor: pointer;
 
     &:hover { color: #000; }
-}
-
-.btn__action {
-    background-color: var(--btn-orange);
-    width: var(--btn-xl);
-    padding: .7rem .2rem;
-    cursor: pointer;
-}
-
-.btn__editar {
-    background-color: var(--btn-red);
-    width: 8rem;
-    height: 2.4rem;
-    padding: 0;
-    cursor: pointer;
 }
 
 @media (min-width: 1400px) {

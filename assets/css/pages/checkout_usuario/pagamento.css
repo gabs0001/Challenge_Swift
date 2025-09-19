@@ -12,26 +12,7 @@ select[name="cartoes"] {
     width: 100%;
 }
 
-#conteudo__principal_acesso { margin-top: 2.4rem; }
-
-.botao__contorno-externo {
-    background-color: #D9D9D9; 
-    width: 3.8rem; 
-    height: 3.8rem;
-}
-
-.botao__contorno-interno {
-    background-color: #999191; 
-    width: 3.2rem; 
-    height: 3.2rem;
-    color: var(--text-color); 
-}
-
-#primeira__divisoria { background-color: #000; }
-
-.botoes__divisoria { min-width: 6.4rem; }
-
-.diminuir__opacidade { opacity: .4; }
+.botoes__divisoria { min-width: 9.6rem; }
 
 .divider__acesso {
     width: 95%;
@@ -56,18 +37,6 @@ select[name="cartoes"] {
     margin: 0 auto 1.2rem;
 }
 
-.btn_qrcode {
-    background-color: var(--btn-red);
-    border-radius: 1rem;
-    padding: .6rem 1.2rem;
-}
-
-.btn_finalizar {
-    background-color: var(--btn-orange);
-    width: var(--btn-xl);
-    padding: .8rem 0;
-}
-
 .info__entrega, .info__retirada {
     background-color: var(--second-internal-form);
     border: 1px solid rgba(179, 175, 175, .5);
@@ -76,9 +45,10 @@ select[name="cartoes"] {
 
 .info__entrega span { cursor: pointer; }
 
-.btn__salvar_info {
-    background-color: var(--btn-orange);
-    width: var(--btn-xl);
-    padding: .8rem 0;
-    font-size: 1rem;
+@media (min-width: 1400px) {
+    .botoes__divisoria { min-width: 18.4rem !important; }
+}
+
+@media (min-width: 1200px) {
+    .botoes__divisoria { min-width: 16.4rem; }
 }

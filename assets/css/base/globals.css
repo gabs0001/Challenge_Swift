@@ -100,4 +100,8 @@ button {
     color: var(--text-color);
 }
 
+#conteudo__principal { margin-top: 2.4rem !important; }
+
+#primeira__divisoria { background-color: #000; }
+
 /* media queries de font-size */

@@ -1,41 +1,10 @@
 section > h2, fieldset > h2 { font-weight: 600; }
 
-#conteudo__principal_acesso { margin-top: 2.4rem; }
-
-.botao__contorno-externo {
-    background-color: #D9D9D9; 
-    width: 3.8rem; 
-    height: 3.8rem;
-}
-
-.botao__contorno-interno {
-    background-color: #999191; 
-    width: 3.2rem; 
-    height: 3.2rem;
-    color: var(--text-color); 
-}
-
-#primeira__divisoria { background-color: #000; }
-
 .botoes__divisoria { min-width: 2rem; }
-
-.diminuir__opacidade { opacity: .4; }
 
 .divider__acesso {
     width: 88%;
     margin: 0 auto;
-}
-
-.btn__salvar_alteracoes {
-    background-color: var(--btn-red);
-    width: var(--btn-lg);
-    padding: .6rem;
-}
-
-.btn__validacao {
-    background-color: var(--btn-orange);
-    width: var(--btn-xl);
-    padding: .8rem .6rem;
 }
 
 @media(min-width:1400px) {

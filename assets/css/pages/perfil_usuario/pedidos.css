@@ -33,10 +33,6 @@ input[type="search"] { padding-right: 2.5rem; }
     border-radius: .4rem;
 }
 
-#conteudo__principal_dados { margin-top: 2.4rem; }
-
-#primeira__divisoria { background-color: #000; }
-
 .divider__dados_historico_pedidos { 
     width: 92%; 
     margin: 0 auto;
@@ -48,16 +44,6 @@ input[type="search"] { padding-right: 2.5rem; }
 
     &:hover { color: #000; }
 }
-
-.btn__detalhes, .btn__comprar {
-    width: var(--btn-xl);
-    padding: .7rem .6rem;
-    cursor: pointer;
-}
-
-.btn__detalhes { background-color: var(--btn-red); }
-
-.btn__comprar { background-color: var(--btn-orange); }
 
 @media (min-width: 1400px) {
     input[type="search"] { min-width: 22.8rem !important; }
