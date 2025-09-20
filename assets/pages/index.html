@@ -27,39 +27,44 @@
     
     <header id="topo" class="row justify-content-center" role="banner">
         <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__login">
-            <section class="
+            <div class="
                         d-flex flex-column align-items-center gap-5 
                         d-sm-flex flex-sm-row justify-content-sm-between gap-sm-0
                         header__container_menu
             ">
                 <a href="#">
-                    <img src="/assets/images/logo/logo-swift.svg" alt="Logotipo da Swift" class="header__container_logo" aria-hidden="true">
+                    <img 
+                        src="/assets/images/logo/logo-swift.svg" alt="Logotipo da Swift" 
+                        class="header__container_logo" aria-hidden="true"
+                    >
                 </a>
                 <h1 id="titulo__login">Seja bem vindo, faça login para continuar!</h1>
-            </section>
+            </div>
         </nav>
     </header>
 
     <main class="row justify-content-center main__container">
-        <section class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 main__container_section" aria-labelledby="opcao__login">
+        
+        <section id="secao__login" class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 main__container_section" aria-labelledby="opcao__login">
+            
             <h2 id="opcao__login" class="mt-4">Escolha uma opção de login:</h2>
             <hr/>
+
             <form action="#" method="post">
                 
                 <fieldset>
                     <legend class="visually-hidden">Login com redes sociais</legend>
+
                     <div class="d-flex justify-content-center gap-3 gap-md-5">
-                        
                         <button class="d-flex justify-content-center align-items-center gap-2 btn__login-facebook">
                             <img src="/assets/images/logo/logo-facebook.svg" alt="Login com Facebook" class="btn__icon" aria-hidden="true">
-                            <span>Login com Facebook</span>
+                            <span class="mt-1">Login com Facebook</span>
                         </button>
                         
                         <button class="d-flex justify-content-center align-items-center gap-2 btn__login-google">
                             <img src="/assets/images/logo/logo-google.svg" alt="Login com Google" class="btn__icon" aria-hidden="true">
-                            <span>Login com Google</span>
+                            <span class="mt-1">Login com Google</span>
                         </button>
-
                     </div>
                 </fieldset>
 
@@ -119,12 +124,14 @@
                 </div>
 
             </form>
+
         </section>
+
     </main>
 
     <footer class="d-xl-flex flex-xl-column footer__container">
         
-        <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
+        <div class="d-sm-flex justify-content-sm-around">
             
             <div class="
                     d-flex justify-content-around align-items-center gap-sm-3
@@ -139,38 +146,35 @@
             </div>
 
             <aside
-                class="
-                    d-flex flex-column align-items-center 
-                    d-md-flex flex-md-row gap-md-3
-                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
-                " 
+                class="d-flex flex-column align-items-center flex-md-row gap-md-3 mb-xl-2" 
                 aria-describedby="redes__sociais"
             >
                 <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
                 
-                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center">
                     <p id="texto__action">
                         SIGA NOSSAS REDES
                     </p>
                 </div>
 
-                <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
-                    <ul class="
-                            d-flex align-items-center gap-3 mb-4 mt-md-3
-                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                <nav class="d-flex flex-row" aria-label="Link das redes sociais da Swift">
+                    <ul class="d-flex align-items-center gap-3 mb-4 mt-md-3 mb-xl-2 mt-xl-0">
                         <li>
                             <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
-                                <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                                <img src="/assets/images/logo/logo-facebook-white.svg" alt="" 
+                                class="btn__icon_social" aria-hidden="true">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/lojaswift" aria-label="Acessar Instagram da Swift">
-                                <img src="/assets/images/logo/logo-instagram-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                                <img src="/assets/images/logo/logo-instagram-white.svg" alt="" 
+                                class="btn__icon_social" aria-hidden="true">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCx_DnTAyLKfvLj5r788zXng" aria-label="Acessar Youtube da Swift">
-                                <img id="icon__youtube" src="/assets/images/logo/logo-youtube-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
+                                <img id="icon__youtube" src="/assets/images/logo/logo-youtube-white.svg" alt="" 
+                                class="btn__icon_social" aria-hidden="true">
                             </a>
                         </li>
                     </ul>
@@ -178,11 +182,11 @@
 
             </aside>
 
-        </section>
+        </div>
 
-        <section id="footer__container_info" class="d-xl-flex justify-content-xl-center align-items-xl-center">
+        <div id="footer__container_info" class="d-xl-flex justify-content-xl-center align-items-xl-center">
             <p class="text-center px-2">© 2024 - SWIFT CORPORATIVO - 02.914.460/0382-04. TODOS OS DIREITOS RESERVADOS.</p>
-        </section>
+        </div>
 
     </footer>
 

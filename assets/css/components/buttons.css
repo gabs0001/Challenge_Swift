@@ -80,7 +80,7 @@
 
 .btn__login-facebook, .btn__login-google {
   font-size: var(--font-size-xs);
-  padding: .8rem;
+  padding: .8rem .6rem;
 }
 
 .btn__login-facebook span, .btn__login-google span { white-space: nowrap; }

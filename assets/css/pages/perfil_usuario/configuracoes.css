@@ -58,7 +58,7 @@ label span {
 
     .divider { display: none; }
 
-    .card__pedido section > div {
+    .card__pedido div {
         width: auto !important;
     }
 }

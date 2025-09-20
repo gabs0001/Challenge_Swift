@@ -27,7 +27,7 @@
     
     <header id="topo" class="row justify-content-center" role="banner">
         <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__pedidos">
-            <section class="
+            <div class="
                         d-flex flex-column align-items-center gap-5 
                         d-sm-flex flex-sm-row justify-content-sm-between
                         px-md-0 header__container_menu
@@ -36,7 +36,7 @@
                     <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
                 </a>
                 <h1 id="titulo__pedidos">Aqui você tem acesso a seu histórico de pedidos!</h1>
-            </section>
+            </div>
         </nav>
     </header>
 
@@ -51,14 +51,15 @@
         "
         aria-label="Etapas do perfil do usuário"
     >
-        <section class="
+        <div class="
             mt-1 ms-5 mt-sm-2 ms-sm-5
             d-flex d-sm-flex flex-sm-column gap-2
             d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="acesso.html" 
                     class="
                         border rounded rounded-pill 
                         d-flex justify-content-center align-items-center 
@@ -67,7 +68,7 @@
                     aria-label="Etapa 1: Acesso e Segurança"
                 >
                     1
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
@@ -78,16 +79,17 @@
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section class="
+        <div class="
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="dados.html" 
                     class="
                         border rounded rounded-pill 
                         d-flex justify-content-center align-items-center 
@@ -96,79 +98,81 @@
                     aria-label="Etapa 2: Meus Dados"
                 >
                     2
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Meus Dados</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section
+        <div
             id="botao__destacado" 
             class="
-                d-flex gap-2 d-sm-flex flex-sm-column mx-sm-0
-                d-lg-flex flex-lg-row align-items-lg-center"
+                d-flex gap-2 flex-sm-column mx-sm-0
+                flex-lg-row align-items-lg-center"
         >    
-            <section class="d-sm-flex justify-content-sm-center mt-lg-2">
+            <div class="d-sm-flex justify-content-sm-center mt-lg-2">
                 <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
-                    <button 
+                    <a
+                        href="pedidos.html" 
                         class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                         aria-current="step"
                         aria-label="Etapa 3: Histórico de Pedidos"
                     >
                         3
-                    </button>
+                    </a>
                 </div>
-            </section>
+            </div>
 
-            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
+            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center">
                 <p>Histórico de Pedidos</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-2 mt-xxl-2">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-2">
                 <hr id="primeira__divisoria" class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
         
 
-        <section class="
+        <div class="
             mt-1 mt-sm-2 ms-5 ms-sm-0 me-sm-5
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="configuracoes.html" 
                     class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                     aria-label="Etapa 4: Configurações e Conta"
                 >
                     4
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Configurações e Conta</p>
             </div>
 
-        </section>
+        </div>
 
     </nav>
     <!-- fim botões de navegação -->
 
     <main id="conteudo__principal" class="row justify-content-center main__container">
 
-            <section class="row justify-content-center">
+            <div class="row justify-content-center">
 
-                <section class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7 main__container_section">
+                <section class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 main__container_section">
 
-                    <section class="main__container_conteudo" aria-labelledby="info_pedidos">
+                    <div class="main__container_conteudo" aria-labelledby="info_pedidos">
 
                         <h2 id="info_pedidos" class="mt-4">Meus Pedidos</h2>
                         <hr class="divider__dados_historico_pedidos"/>
@@ -178,12 +182,11 @@
                             <fieldset>
                                 <legend class="visually-hidden">Filtragem de pedidos</legend>
 
-                                <section class="d-flex flex-column flex-lg-row justify-content-lg-evenly ms-lg-3">
+                                <div class="d-flex flex-column flex-lg-row justify-content-lg-evenly ms-lg-3">
 
-                                    <section class="
+                                    <div class="
                                                 d-flex flex-column align-items-start mt-3 gap-3
-                                                d-sm-flex flex-sm-row gap-sm-2 ms-sm-2
-                                                mt-lg-4
+                                                flex-sm-row gap-sm-2 ms-sm-2 mt-lg-4
                                                 d-md-flex justify-content-md-evenly gap-md-0 me-md-5
                                     ">
                                         <div class="d-flex ms-4">
@@ -230,9 +233,9 @@
                                             <label class="ms-1 text-nowrap" for="ultimos_meses">Ultimos 6 meses</label>
                                         </div>
 
-                                    </section>
+                                    </div>
                                     
-                                    <section class="d-flex justify-content-sm-center mt-3 search__wrapper">
+                                    <div class="d-flex justify-content-sm-center mt-3 search__wrapper">
                                         <input
                                             type="search"
                                             name="buscar_pedido"
@@ -242,18 +245,18 @@
                                             aria-labelledby="busca_info"
                                         >
                                         <small class="visually-hidden" id="busca_info">Buscar pedido por id ou nome do produto</small>
-                                    </section>
+                                    </div>
 
-                                </section>
+                                </div>
 
                             </fieldset>
 
                         </form>
 
                         <!-- cards de pedidos -->
-                        <section class="row justify-content-center justify-content-md-evenly mx-md-1 mx-lg-0 mx-xxl-4">
+                        <div class="row justify-content-center justify-content-md-evenly mx-md-1 mx-lg-0 mx-xxl-4">
 
-                            <section class="col-10 col-sm-7 col-md-5 col-lg-5 col-xl-5 col-xxl-3 my-4 card__pedido">
+                            <div class="col-10 col-sm-7 col-md-5 col-xxl-3 my-4 card__pedido">
                                 <h2 class="mt-3">Pedido 1</h2>
                                 <hr class="mb-2 divider__dados_historico_pedidos"/>
 
@@ -287,9 +290,9 @@
                                     <button class="btn__comprar">Comprar novamente</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="col-10 col-sm-7 col-md-5 col-lg-5 col-xl-5 col-xxl-3 card__pedido my-2 my-md-4">
+                            <div class="col-10 col-sm-7 col-md-5 col-xxl-3 card__pedido my-2 my-md-4">
                                 <h2 class="mt-3">Pedido 2</h2>
                                 <hr class="mb-2 divider__dados_historico_pedidos"/>
 
@@ -323,9 +326,9 @@
                                     <button class="btn__comprar">Comprar novamente</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="col-10 col-sm-7 col-md-5 col-lg-5 col-xl-5 col-xxl-3 card__pedido my-4">
+                            <div class="col-10 col-sm-7 col-md-5 col-xxl-3 card__pedido my-4">
                                 <h2 class="mt-3">Pedido 3</h2>
                                 <hr class="mb-2 divider__dados_historico_pedidos"/>
 
@@ -359,18 +362,17 @@
                                     <button class="btn__comprar">Comprar novamente</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                        </section>
+                        </div>
 
                         <!-- fim cards de pedidos -->
                         
-
-                    </section>
+                    </div>
 
                 </section>
 
-            </section>
+            </div>
         
     </main>
 
@@ -379,8 +381,7 @@
         <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
             
             <div class="
-                    d-flex justify-content-around align-items-center gap-sm-3
-                    d-xl-flex align-items-xl-center gap-xl-3
+                d-flex justify-content-around align-items-center gap-sm-3
             ">
                 <a href="#topo">
                     <img src="/assets/images/logo/logo-swift-white.svg" alt="Retornar ao topo da página" class="mb-xl-2 btn__icon_footer"/>
@@ -393,23 +394,20 @@
             <aside
                 class="
                     d-flex flex-column align-items-center 
-                    d-md-flex flex-md-row gap-md-3
-                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
+                    flex-md-row gap-md-3 mb-xl-2
                 " 
                 aria-describedby="redes__sociais"
             >
                 <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
                 
-                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center">
                     <p id="texto__action">
                         SIGA NOSSAS REDES
                     </p>
                 </div>
 
-                <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
-                    <ul class="
-                            d-flex align-items-center gap-3 mb-4 mt-md-3
-                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                <nav class="d-flex flex-row" aria-label="Link das redes sociais da Swift">
+                    <ul class="d-flex align-items-center gap-3 mb-4 mt-md-3 mb-xl-2 mt-xl-0">
                         <li>
                             <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
                                 <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">

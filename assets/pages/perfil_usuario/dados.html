@@ -27,39 +27,37 @@
     
     <header id="topo" class="row justify-content-center" role="banner">
         <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__dados">
-            <section class="
+            <div class="
                         d-flex flex-column align-items-center gap-5 
-                        d-sm-flex flex-sm-row justify-content-sm-between
+                        flex-sm-row justify-content-sm-between
                         px-md-0 header__container_menu
             ">
                 <a href="#">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
                 </a>
                 <h1 id="titulo__dados">Aqui você pode visualizar seus endereços, cartões e telefones!</h1>
-            </section>
+            </div>
         </nav>
     </header>
 
     <!-- botões de navegação -->
     <nav
         class="
-            d-flex gap-2 mt-5 flex-column 
-            d-sm-flex flex-sm-row justify-content-sm-center gap-sm-4
-            gap-lg-5
-            d-xl-flex justify-content-xl-center gap-xl-3
-            gap-xxl-4
+            d-flex gap-2 mt-5 flex-column flex-sm-row justify-content-sm-center 
+            gap-sm-4 gap-lg-5 gap-xl-3 gap-xxl-4
         "
         aria-label="Etapas do perfil do usuário"
     >
 
-        <section class="
-            mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2 ms-sm-5
-            d-lg-flex flex-lg-row align-items-lg-center
+        <div class="
+            d-flex flex-sm-column gap-2 mt-1 ms-5 
+            flex-lg-row align-items-lg-center
+            mt-sm-2 ms-sm-0
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="acesso.html" 
                     class="
                         border rounded rounded-pill 
                         d-flex justify-content-center align-items-center 
@@ -68,97 +66,100 @@
                     aria-label="Etapa 1: Acesso e Segurança"
                 >
                     1
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Acesso e Segurança</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section
+        <div
             id="botao__destacado"
-            class="d-flex gap-2 d-sm-flex flex-sm-column mx-sm-3 d-lg-flex flex-lg-row align-items-lg-center mx-lg-0"
+            class="d-flex gap-2 flex-sm-column mx-sm-3 flex-lg-row align-items-lg-center mx-lg-0"
         >    
-            <section class="d-sm-flex justify-content-sm-center mt-lg-1">
+            <div class="d-sm-flex justify-content-sm-center mt-lg-1">
                 <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
-                    <button 
+                    <a
+                        href="dados.html" 
                         class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                         aria-current="step"
                         aria-label="Etapa 2: Meus Dados"
                     >
                         2
-                    </button>
+                    </a>
                 </div>
-            </section>
+            </div>
 
-            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
+            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center">
                 <p>Meus Dados</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-3">
                 <hr id="primeira__divisoria" class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section class="
+        <div class="
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="pedidos.html" 
                     class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                     aria-label="Etapa 3: Histórico de Pedidos"
                 >
                     3
-                </button>
+                </a>
             </div>
             
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Histórico de Pedidos</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section class="
+        <div class="
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             mt-1 mt-sm-2 ms-5 ms-sm-0 me-sm-5
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="configuracoes.html"
                     class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                     aria-label="Etapa 4: Configurações e Conta"
                 >
                     4
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Configurações e Conta</p>
             </div>
 
-        </section>
+        </div>
 
     </nav>
     <!-- fim botões de navegação -->
 
     <main id="conteudo__principal" class="row justify-content-center main__container">
 
-        <section class="col-10 col-sm-9 col-md-7 col-lg-7 col-xl-6 main__container_section">
+        <div class="col-10 col-sm-9 col-md-7 col-xl-6 col-xxl-7 main__container_section">
 
             <section class="row justify-content-center justify-content-xxl-evenly">
 
@@ -167,67 +168,56 @@
                     <hr class="divider__dados_enderecos"/>
 
                     <!-- cards de endereço -->
-                    <section 
-                        class="
-                            d-flex flex-column align-items-center py-3 m-4
-                            mx-sm-5
-                            d-xxl-flex flex-xxl-column align-items-xxl-center py-xxl-3 
-                            card__enderecos" 
+                    <div 
+                        class="d-flex flex-column align-items-center py-3 m-4 mx-sm-5 card__enderecos"
                         aria-labelledby="enderecos__cadastrados"
                     >
                         <h2 id="enderecos__cadastrados" class="visually-hidden"></h2>
 
                         <h5>Casa</h5>
                         <hr class="divider__dados_card_enderecos"/>
-                        <p class="mt-2 mt-xxl-2">Rua teste, N° 123, Bairro teste</p>
+                        <p class="mt-2">Rua teste, N° 123, Bairro teste</p>
                         <p>Cidade, Estado, 00000-000</p>
-                        <div class="d-flex gap-3 d-xxl-flex justify-content-xxl-center gap-xxl-3">
+                        <div class="d-flex gap-3 justify-content-xxl-center">
                             <i aria-label="Editar endereço" class="fa-solid fa-pencil icon__color"></i>
                             <i aria-label="Excluir endereço" class="fa-solid fa-trash icon__color"></i>
                             <i aria-label="Favoritar endereço" class="fa-regular fa-star icon__color"></i>
                         </div>
-                    </section>
+                    </div>
 
-                    <section
+                    <div
                         id="segundo__card"
-                        class="
-                            d-flex flex-column align-items-center py-3 m-4
-                            mx-sm-5
-                            d-xxl-flex flex-xxl-column align-items-xxl-center py-xxl-3 
-                            card__enderecos
+                        class="d-flex flex-column align-items-center py-3 m-4 mx-sm-5 card__enderecos
                     ">
                         <h5>Trabalho</h5>
                         <hr class="divider__dados_card_enderecos"/>
                         <p class="mt-2 mt-xxl-2">Rua teste, N° 321, Bairro teste</p>
                         <p>Cidade, Estado, 11111-111</p>
-                        <div class="d-flex gap-3 d-xxl-flex justify-content-xxl-center gap-xxl-3">
+                        <div class="d-flex gap-3 justify-content-xxl-center">
                             <i aria-label="Editar endereço" class="fa-solid fa-pencil icon__color"></i>
                             <i aria-label="Excluir endereço" class="fa-solid fa-trash icon__color"></i>
                             <i aria-label="Favoritar endereço" class="fa-regular fa-star icon__color"></i>
                         </div>
-                    </section>
+                    </div>
                     <!-- fim cards de endereço -->
                     
-                    <div class="d-flex justify-content-center my-3 d-xxl-flex justify-content-xxl-center">
+                    <div class="d-flex justify-content-center my-3">
                         <button class="btn__adicionar">Novo Endereço</button>
                     </div>
 
                 </section>
     
-                <section class="mt-4 mt-xxl-0 col-sm-10 col-md-10 col-lg-9 col-xxl-6" aria-labelledby="info_contato">
+                <section class="mt-4 mt-xxl-0 col-sm-10 col-lg-9 col-xxl-6" aria-labelledby="info_contato">
                     <h2 id="info_contato" class="visually-hidden">Meus cartões e telefones</h2>
                     
-                    <section class="main__container_conteudo">
+                    <div class="main__container_conteudo">
                         <h2 class="mt-4">Meus Cartões</h2>
                         <hr class="divider__dados_contato"/>
                         
-                        <section class="d-xxl-flex justify-content-xxl-evenly px-sm-5">    
+                        <div class="d-xxl-flex justify-content-xxl-evenly px-sm-5">    
                             <!-- card cartões -->
-                            <section 
-                                class="
-                                    d-flex flex-column align-items-center mx-5 mt-4 p-3
-                                    d-xxl-flex flex-xxl-column align-items-xxl-center p-xxl-3 mt-xxl-4 mx-xxl-0
-                                    card__cartoes" 
+                            <div 
+                                class="d-flex flex-column align-items-center mx-5 mt-4 p-3 mt-xxl-4 mx-xxl-0 card__cartoes" 
                                 aria-labelledby="cartoes__cadastrados"
                             >
                                 <h2 id="cartoes__cadastrados" class="visually-hidden">Cards de cartões cadastrados</h2>
@@ -235,18 +225,14 @@
                                 <h5>Cartão 1</h5>
                                 <hr class="divider__dados_card_contato"/>
                                 <p class="mt-2 mt-xxl-2">Visa ************1234</p>
-                                <div class="d-flex gap-3 d-xxl-flex justify-content-xxl-center gap-xxl-3">
+                                <div class="d-flex gap-3 justify-content-xxl-center">
                                     <i aria-label="Editar cartão" class="fa-solid fa-pencil icon__color"></i>
                                     <i aria-label="Excluir cartão" class="fa-solid fa-trash icon__color"></i>
                                     <i aria-label="Favoritar cartão" class="fa-regular fa-star icon__color"></i>
                                 </div>
-                            </section>
+                            </div>
 
-                            <section class="
-                                d-flex flex-column align-items-center mx-5 mt-4 p-3
-                                d-xxl-flex flex-xxl-column align-items-xxl-center p-xxl-3 mt-xxl-4 mx-xxl-0
-                                card__cartoes
-                            ">
+                            <div class="d-flex flex-column align-items-center mx-5 mt-4 p-3 mt-xxl-4 mx-xxl-0 card__cartoes">
                                 <h5>Cartão 2</h5>
                                 <hr class="divider__dados_card_contato"/>
                                 <p class="mt-2 mt-xxl-2">Visa ************4321</p>
@@ -255,26 +241,25 @@
                                     <i aria-label="Excluir cartão" class="fa-solid fa-trash icon__color"></i>
                                     <i aria-label="Favoritar cartão" class="fa-regular fa-star icon__color"></i>
                                 </div>
-                            </section>
+                            </div>
                             <!-- fim card cartões -->
-                        </section>
+                        </div>
                         
                         <div class="d-flex justify-content-center my-4 d-xxl-flex justify-content-xxl-center my-xxl-4">
                             <button class="btn__adicionar">Novo Cartão</button>
                         </div>
 
-                    </section>
+                    </div>
                     
-                    <section class="mt-4 main__container_conteudo mt-xxl-5">
+                    <div class="mt-4 main__container_conteudo mt-xxl-5">
                         <h2 class="mt-4">Meus Telefones</h2>
                         <hr class="divider__dados_contato"/>
 
-                        <section class="d-xxl-flex justify-content-xxl-evenly px-sm-5"> 
+                        <div class="d-xxl-flex justify-content-xxl-evenly px-sm-5"> 
                             <!-- card telefones -->
-                            <section 
+                            <div 
                                 class="
-                                    d-flex flex-column align-items-center p-4 mt-4 mx-5
-                                    d-xxl-flex flex-xxl-column align-items-xxl-center p-xxl-4 mt-xxl-4 mx-xxl-0
+                                    d-flex flex-column align-items-center p-4 mt-4 mx-5 mx-xxl-0
                                     card__telefones" 
                                 aria-labelledby="telefones__cadastrados"
                             >
@@ -282,42 +267,41 @@
 
                                 <h5>Telefone 1</h5>
                                 <hr class="divider__dados_card_contato"/>
-                                <p class="mt-2 mt-xxl-2">(11)99999-9999</p>
-                                <div class="d-flex gap-3 d-xxl-flex justify-content-xxl-center gap-xxl-3">
+                                <p class="mt-2">(11)99999-9999</p>
+                                <div class="d-flex gap-3 justify-content-xxl-center">
                                     <i aria-label="Editar telefone" class="fa-solid fa-pencil icon__color"></i>
                                     <i aria-label="Excluir telefone" class="fa-solid fa-trash icon__color"></i>
                                     <i aria-label="Favoritar telefone" class="fa-regular fa-star icon__color"></i>
                                 </div>
-                            </section>
+                            </div>
 
-                            <section class="
-                                    d-flex flex-column align-items-center p-4 mt-4 mx-5
-                                    d-xxl-flex flex-xxl-column align-items-xxl-center p-xxl-4 mt-xxl-4 mx-xxl-0
+                            <div class="
+                                    d-flex flex-column align-items-center p-4 mt-4 mx-5 mx-xxl-0
                                     card__telefones
                             ">
                                 <h5>Telefone 2</h5>
                                 <hr class="divider__dados_card_contato"/>
-                                <p class="mt-2 mt-xxl-2">(11)98888-8888</p>
-                                <div class="d-flex gap-3 d-xxl-flex justify-content-xxl-center gap-xxl-3">
+                                <p class="mt-2">(11)98888-8888</p>
+                                <div class="d-flex gap-3 justify-content-xxl-center">
                                     <i aria-label="Editar telefone" class="fa-solid fa-pencil icon__color"></i>
                                     <i aria-label="Excluir telefone" class="fa-solid fa-trash icon__color"></i>
                                     <i aria-label="Favoritar telefone" class="fa-regular fa-star icon__color"></i>
                                 </div>
-                            </section>
+                            </div>
                             <!-- fim card telefones -->
-                        </section>
+                        </div>
 
-                        <div class="d-flex justify-content-center my-4 d-xxl-flex justify-content-xxl-center my-xxl-4">
+                        <div class="d-flex justify-content-center my-4">
                             <button class="btn__adicionar">Novo Telefone</button>
                         </div>
 
-                    </section>
+                    </div>
 
                 </section>
 
             </section>
 
-        </section>
+        </div>
         
     </main>
 
@@ -325,38 +309,29 @@
         
         <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
             
-            <div class="
-                    d-flex justify-content-around align-items-center gap-sm-3
-                    d-xl-flex align-items-xl-center gap-xl-3
-            ">
+            <div class="d-flex justify-content-around align-items-center gap-sm-3">
                 <a href="#topo">
                     <img src="/assets/images/logo/logo-swift-white.svg" alt="Retornar ao topo da página" class="mb-xl-2 btn__icon_footer"/>
                 </a>
-                <p id="frase__destaque" class="mt-3 mt-sm-3">
+                <p id="frase__destaque" class="mt-3">
                     <span id="texto__destaque">PREÇO BAIXO:</span> PERFEITO<br> PARA O SEU BOLSO
                 </p>
             </div>
 
             <aside
-                class="
-                    d-flex flex-column align-items-center 
-                    d-md-flex flex-md-row gap-md-3
-                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
-                " 
+                class="d-flex flex-column align-items-center flex-md-row gap-md-3 mb-xl-2" 
                 aria-describedby="redes__sociais"
             >
                 <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
                 
-                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center">
                     <p id="texto__action">
                         SIGA NOSSAS REDES
                     </p>
                 </div>
 
                 <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
-                    <ul class="
-                            d-flex align-items-center gap-3 mb-4 mt-md-3
-                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                    <ul class="d-flex align-items-center gap-3 mb-4 mt-md-3 mb-xl-2 mt-xl-0">
                         <li>
                             <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
                                 <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">

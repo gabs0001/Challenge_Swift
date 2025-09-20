@@ -26,29 +26,32 @@
     
     <header id="topo" class="row justify-content-center" role="banner">
         <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__cadastro">
-            <section class="
+            <div class="
                         d-flex flex-column align-items-center gap-5 
-                        d-sm-flex flex-sm-row justify-content-sm-between gap-sm-0
+                        flex-sm-row justify-content-sm-between gap-sm-0
                         header__container_menu
             ">
                 <a href="#">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Logotipo da Swift" class="header__container_logo" aria-hidden="true">
                 </a>
                 <h1 id="titulo__cadastro">Realize seu cadastro para continuar!</h1>
-            </section>
+            </div>
         </nav>
     </header>
 
     <main class="row justify-content-center main__container">
+
         <section class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 main__container_section" aria-labelledby="info_usuario">
+           
             <h2 id="info_usuario" class="mt-4">Insira suas informações para criar sua conta:</h2>
             <hr/>
+
             <form action="#" method="post">
 
                 <fieldset>
                     <legend class="visually-hidden">Dados de cadastro</legend>
 
-                    <div class="mt-4 ps-1 pe-1">
+                    <div class="mt-4 px-1">
                         <label for="telefone_usuario">Telefone:</label>
                         <input 
                             type="tel"
@@ -62,7 +65,7 @@
                         <small class="visually-hidden telefone__info">informe o número do seu telefone</small>
                     </div>
 
-                    <div class="mt-3 ps-1 pe-1">
+                    <div class="mt-3 px-1">
                         <label for="cpf_usuario">CPF:</label>
                         <input 
                             type="text"
@@ -76,7 +79,7 @@
                         <small class="visually-hidden cpf__info">informe o número do seu cpf</small>
                     </div>
 
-                    <div class="mt-3 ps-1 pe-1">
+                    <div class="mt-3 px-1">
                         <label for="email_usuario">Email:</label>
                         <input 
                             type="email"
@@ -90,7 +93,7 @@
                         <small class="visually-hidden email__info">informe seu melhor email</small>
                     </div>
 
-                    <div class="mt-3 ps-1 pe-1">
+                    <div class="mt-3 px-1">
                         <label for="senha_usuario">Senha:</label>
                         <input 
                             type="password" 
@@ -104,7 +107,7 @@
                         <small class="visually-hidden senha__info">informe sua senha</small>
                     </div>
 
-                    <div class="mt-3 ps-1 pe-1">
+                    <div class="mt-3 px-1">
                         <label for="confirma_senha_usuario">Confirme sua senha:</label>
                         <input 
                             type="password" 
@@ -120,22 +123,21 @@
 
                 </fieldset>
 
-                <div class="d-flex justify-content-center mt-4 mb-4">
+                <div class="d-flex justify-content-center mt-5 mb-4">
                     <button class="btn__salvar">Salvar</button>
                 </div>
 
             </form>
+
         </section>
+
     </main>
 
     <footer class="d-xl-flex flex-xl-column footer__container">
         
-        <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
+        <div class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
             
-            <div class="
-                    d-flex justify-content-around align-items-center gap-sm-3
-                    d-xl-flex align-items-xl-center gap-xl-3
-            ">
+            <div class="d-flex justify-content-around align-items-center gap-sm-3">
                 <a href="#topo">
                     <img src="/assets/images/logo/logo-swift-white.svg" alt="Retornar ao topo da página" class="mb-xl-2 btn__icon_footer"/>
                 </a>
@@ -145,25 +147,19 @@
             </div>
 
             <aside
-                class="
-                    d-flex flex-column align-items-center 
-                    d-md-flex flex-md-row gap-md-3
-                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
-                " 
+                class="d-flex flex-column align-items-center flex-md-row gap-md-3 mb-xl-2" 
                 aria-describedby="redes__sociais"
             >
                 <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
                 
-                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center">
                     <p id="texto__action">
                         SIGA NOSSAS REDES
                     </p>
                 </div>
 
                 <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
-                    <ul class="
-                            d-flex align-items-center gap-3 mb-4 mt-md-3
-                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                    <ul class="d-flex align-items-center gap-3 mb-4 mt-md-3 mb-xl-2 mt-xl-0">
                         <li>
                             <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
                                 <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
@@ -184,11 +180,11 @@
 
             </aside>
 
-        </section>
+        </div>
 
-        <section id="footer__container_info" class="d-xl-flex justify-content-xl-center align-items-xl-center">
+        <div id="footer__container_info" class="d-xl-flex justify-content-xl-center align-items-xl-center">
             <p class="text-center px-2">© 2024 - SWIFT CORPORATIVO - 02.914.460/0382-04. TODOS OS DIREITOS RESERVADOS.</p>
-        </section>
+        </div>
 
     </footer>
 

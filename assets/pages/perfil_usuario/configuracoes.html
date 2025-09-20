@@ -27,39 +27,37 @@
     
     <header id="topo" class="row justify-content-center" role="banner">
         <nav class="col-10 col-sm-12 col-md-11" aria-labelledby="titulo__preferencias">
-            <section class="
+            <div class="
                         d-flex flex-column align-items-center gap-5 
-                        d-sm-flex flex-sm-row justify-content-sm-between
+                        flex-sm-row justify-content-sm-between
                         px-md-0 header__container_menu
             ">
                 <a href="#">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
                 </a>
                 <h1 id="titulo__preferencias">Aqui você pode editar suas preferências!</h1>
-            </section>
+            </div>
         </nav>
     </header>
 
     <!-- botões de navegação -->
     <nav
         class="
-            d-flex gap-2 mt-5 flex-column 
-            d-sm-flex flex-sm-row justify-content-sm-center gap-sm-5
-            gap-lg-5
-            d-xl-flex justify-content-xl-center gap-xl-3
-            gap-xxl-4
+            d-flex gap-2 mt-5 flex-column flex-sm-row justify-content-sm-center 
+            gap-sm-5 gap-xl-3 gap-xxl-4
         "
         aria-label="Etapas do perfil do usuário"
     >
             
-        <section class="
+        <div class="
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="acesso.html" 
                     class="
                         border rounded rounded-pill 
                         d-flex justify-content-center align-items-center 
@@ -68,27 +66,28 @@
                     aria-label="Etapa 1: Acesso e Segurança"
                 >
                     1
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Acesso e Segurança</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section class="
+        <div class="
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="dados.html" 
                     class="
                         border rounded rounded-pill 
                         d-flex justify-content-center align-items-center 
@@ -97,95 +96,96 @@
                     aria-label="Etapa 2: Meus Dados"
                 >
                     2
-                </button>
+                </a>
             </div>
 
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Meus Dados</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section class="
+        <div class="
+            d-flex flex-sm-column gap-2
+            flex-lg-row align-items-lg-center
             mt-1 ms-5 mt-sm-2 ms-sm-0
-            d-flex d-sm-flex flex-sm-column gap-2
-            d-lg-flex flex-lg-row align-items-lg-center
             diminuir__opacidade
         ">
             <div class="d-sm-flex justify-content-sm-center">
-                <button 
+                <a
+                    href="pedidos.html" 
                     class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                     aria-label="Etapa 3: Histórico de Pedidos"
                 >
                     3
-                </button>
+                </a>
             </div>
             
             <div class="d-flex justify-content-center align-items-end mt-lg-3">
                 <p>Histórico de Pedidos</p>
             </div>
 
-            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
+            <div class="d-none d-xl-flex justify-content-xl-center align-items-xl-center mt-xl-1">
                 <hr class="botoes__divisoria"/>
             </div>
 
-        </section>
+        </div>
 
-        <section 
+        <div 
             id="botao__destacado" 
             class="
-                d-flex gap-2 d-sm-flex flex-sm-column mx-sm-0
-                d-lg-flex flex-lg-row align-items-lg-center"
+                d-flex gap-2 flex-sm-column mx-sm-0
+                flex-lg-row align-items-lg-center"
         >    
-            <section class="d-sm-flex justify-content-sm-center mt-lg-2">
+            <div class="d-sm-flex justify-content-sm-center mt-lg-2">
                 <div class="border rounded rounded-pill d-flex align-items-center justify-content-center botao__contorno-externo">
-                    <button 
+                    <a
+                        href="configuracoes.html" 
                         class="border rounded rounded-pill d-flex justify-content-center align-items-center botao__contorno-interno"
                         aria-current="step"
                         aria-label="Etapa 4: Configurações e Conta"
                     >
                         4
-                    </button>
+                    </a>
                 </div>
-            </section>
+            </div>
 
-            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center d-lg-flex align-items-lg-center">
+            <div class="mt-3 mt-sm-0 mt-lg-4 d-flex justify-content-center align-items-center">
                 <p>Configurações e Conta</p>
             </div>
 
-        </section>
+        </div>
 
     </nav>
     <!-- fim botões de navegação -->
 
     <main id="conteudo__principal" class="row justify-content-center main__container">
 
-        <section class="row justify-content-center">
+        <div class="row justify-content-center">
 
-            <section class="col-11 col-sm-10 col-md-8 col-lg-8 col-xl-7 col-xxl-7 main__container_section">
+            <div class="col-11 col-sm-10 col-md-8 col-xl-7 main__container_section">
 
                 <section class="main__container_conteudo" aria-labelledby="info_preferencias">
 
-                    <div class="d-flex justify-content-between mx-3 mx-sm-4 mx-md-4 mx-lg-5">
+                    <div class="d-flex justify-content-between mx-3 mx-sm-4 mx-lg-5">
                         <h2 id="info_preferencias" class="mt-4">Preferências da conta</h2>
                         <span id="sair" class="mt-4">Sair</span>
                     </div>
 
                     <hr class="divider__dados_titulo"/>
 
-                    <!-- cards de pedidos -->
-                    <section class="row justify-content-center justify-content-xl-evenly gap-xl-5">
+                    <div class="row justify-content-center justify-content-xl-evenly gap-xl-5">
 
-                        <section class="col-10 col-sm-9 col-md-9 col-lg-8 col-xl-6 col-xxl-6 my-4 card__pedido">
+                        <section class="col-10 col-sm-9 col-lg-8 col-xl-6 my-4 card__pedido">
 
                             <h2 class="mt-3">Minhas Informações</h2>
                             <hr class="mb-2 divider__dados_historico_pedidos"/>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mt-3 mb-4 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -202,9 +202,9 @@
                                     <button class="btn__editar mb-3 mb-sm-0">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-4 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -221,9 +221,9 @@
                                     <button class="btn__editar mb-3 mb-sm-0">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-4 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -240,9 +240,9 @@
                                     <button class="btn__editar mb-3 mb-sm-0">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-4 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -259,7 +259,7 @@
                                     <button class="btn__editar mb-3 mb-sm-0">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
                             <div id="salvar__alteracoes" class="d-flex justify-content-center my-4">
                                 <button class="btn__action">Salvar alterações</button>
@@ -267,12 +267,12 @@
 
                         </section>
 
-                        <section class="col-10 col-sm-7 col-md-7 col-lg-5 col-xl-4 my-4 card__pedido">
+                        <section class="col-10 col-sm-7 col-lg-5 col-xl-4 my-4 card__pedido">
 
                             <h2 class="mt-3">Histórico de acessos</h2>
                             <hr class="mb-2 divider__dados_historico_pedidos"/>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-3 mx-2 mt-3
                                 flex-sm-row justify-content-sm-between mt-sm-3
                             ">
@@ -282,9 +282,9 @@
                                     <button class="btn__editar mb-3">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-3 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -294,9 +294,9 @@
                                     <button class="btn__editar mb-3">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mb-3 mx-2
                                 flex-sm-row justify-content-sm-between
                             ">
@@ -306,9 +306,9 @@
                                     <button class="btn__editar mb-3">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <section class="
+                            <div class="
                                 d-flex flex-column align-items-center mx-2
                                 flex-sm-row justify-content-sm-between
                             ">                                
@@ -318,7 +318,7 @@
                                     <button class="btn__editar mb-3">Editar</button>
                                 </div>
 
-                            </section>
+                            </div>
 
                             <div class="d-flex justify-content-center my-4">
                                 <button class="btn__action">Encerrar sessões</button>
@@ -326,9 +326,7 @@
 
                         </section>
 
-                    </section>
-
-                    <!-- fim cards de pedidos -->
+                    </div>
                     
                     <!-- inputs com preferencias de usuario -->
                     <form>
@@ -338,7 +336,7 @@
 
                             <div class="d-flex ms-4 mt-3 justify-content-sm-center me-sm-5">
                                 <input type="checkbox" name="politica_privacidade" id="politica_privacidade" class="me-sm-1">
-                                <label class="text-nowrap ms-2 ms-sm-2" for="politica_privacidade">
+                                <label class="text-nowrap ms-2" for="politica_privacidade">
                                     Li e aceito a <span>Politica de Privacidade</span>
                                 </label>
                             </div>
@@ -363,47 +361,39 @@
 
                 </section>
 
-            </section>
+            </div>
 
-        </section>
+        </div>
+
     </main>
 
     <footer class="d-xl-flex flex-xl-column footer__container">
         
-        <section class="d-sm-flex justify-content-sm-around d-xl-flex justify-content-xl-around">
+        <section class="d-sm-flex justify-content-sm-around justify-content-xl-around">
             
-            <div class="
-                    d-flex justify-content-around align-items-center gap-sm-3
-                    d-xl-flex align-items-xl-center gap-xl-3
-            ">
+            <div class="d-flex justify-content-around align-items-center gap-sm-3">
                 <a href="#topo">
                     <img src="/assets/images/logo/logo-swift-white.svg" alt="Retornar ao topo da página" class="mb-xl-2 btn__icon_footer"/>
                 </a>
-                <p id="frase__destaque" class="mt-3 mt-sm-3">
+                <p id="frase__destaque" class="mt-3">
                     <span id="texto__destaque">PREÇO BAIXO:</span> PERFEITO<br> PARA O SEU BOLSO
                 </p>
             </div>
 
             <aside
-                class="
-                    d-flex flex-column align-items-center 
-                    d-md-flex flex-md-row gap-md-3
-                    d-xl-flex flex-xl-row gap-xl-3 mb-xl-2
-                " 
+                class="d-flex flex-column align-items-center flex-md-row gap-md-3 mb-xl-2" 
                 aria-describedby="redes__sociais"
             >
                 <h2 id="redes__sociais" class="visually-hidden">Redes sociais da Swift</h2>
                 
-                <div class="mt-sm-3 d-xl-flex align-items-xl-center mt-xl-3">
+                <div class="mt-sm-3 d-xl-flex align-items-xl-center">
                     <p id="texto__action">
                         SIGA NOSSAS REDES
                     </p>
                 </div>
 
                 <nav class="d-flex flex-row d-xl-flex" aria-label="Link das redes sociais da Swift">
-                    <ul class="
-                            d-flex align-items-center gap-3 mb-4 mt-md-3
-                            d-xl-flex align-items-xl-center gap-xl-3 mb-xl-2 mt-xl-0">
+                    <ul class="d-flex align-items-center gap-3 mb-4 mt-md-3 mb-xl-2 mt-xl-0">
                         <li>
                             <a href="https://www.facebook.com/lojaswift" aria-label="Acessar Facebook da Swift">
                                 <img src="/assets/images/logo/logo-facebook-white.svg" alt="" class="btn__icon_social" aria-hidden="true">
