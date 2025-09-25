@@ -32,7 +32,7 @@
                         d-sm-flex flex-sm-row justify-content-sm-between gap-sm-0
                         header__container_menu
             ">
-                <a href="#">
+                <a href="index.html">
                     <img 
                         src="/assets/images/logo/logo-swift.svg" alt="Logotipo da Swift" 
                         class="header__container_logo" aria-hidden="true"
@@ -81,6 +81,7 @@
                             class="mt-1"
                             aria-describedby="email__info"
                             required
+                            data-login
                         ">
                         <small class="visually-hidden" id="email__info">informe seu melhor email</small>
                     </div>
@@ -95,9 +96,11 @@
                             class="mt-1"
                             aria-describedby="senha__info"
                             required
+                            data-login
                         >
                         <small class="visually-hidden" id="senha__info">informe sua senha</small>
                     </div>
+
                 </fieldset>
 
                 <div class="d-flex justify-content-end">
@@ -105,7 +108,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center mt-4">
-                    <button class="btn__login">Login</button>
+                    <button id="btn-login" class="btn__login">Login</button>
                 </div>
 
                 <fieldset>
@@ -113,7 +116,7 @@
 
                     <div class="d-flex flex-column align-items-center">
                         <p class="text__sm mt-4">Continuar sem login? Entre como visitante!</p>
-                        <button class="btn__visitante">Entrar</button>
+                        <a href="./cadastro_usuario/acesso_visitante.html" class="btn__visitante">Entrar</a>
                     </div>
                 </fieldset>
 
@@ -195,6 +198,8 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous">
     </script>
+
+    <script type="module" src="../js/main.js"></script>
 
 </body>
 </html>

@@ -32,7 +32,7 @@
                         flex-sm-row justify-content-sm-between gap-sm-0
                         header__container_menu
             ">
-                <a href="#">
+                <a href="../index.html">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
                 </a>
                 <h1 id="titulo__entrega_recebimento">Revise suas informações para entrega e recebimento!</h1>
@@ -170,8 +170,8 @@
                                     
                                     <div class="d-flex flex-column align-items-center my-2 mx-3 flex-sm-row mt-sm-4">
                                         <label for="endereco_entrega" class="mb-2 text-nowrap mb-sm-0 ms-sm-1">Endereço para entrega:</label>
-                                        <input type="text" name="endereco_entrega" id="endereco_entrega" class="mx-sm-3">
-                                        <button class="mt-3 text-nowrap mt-sm-0 me-sm-1 btn_action">Alterar Endereço</button>
+                                        <input type="text" name="endereco_entrega" id="endereco_entrega" class="mx-sm-3" value="Casa" readonly>
+                                        <button class="mt-3 text-nowrap mt-sm-0 me-sm-1 btn_action btn-alterar">Alterar Endereço</button>
                                     </div>
 
                                     <div class="d-flex flex-column mx-3 flex-sm-row gap-sm-3 align-items-sm-center justify-content-sm-between">
@@ -180,23 +180,24 @@
                                             <label for="opcao_entrega" class="mb-2 text-nowrap mb-sm-0 ms-sm-1">Opção de entrega:</label>
                                             <select name="opcao_entrega" id="opcao_entrega">
                                                 <option value="0" disabled selected>Selecione uma opção...</option>
-                                                <option value="1">Opção 1</option>
-                                                <option value="2">Opção 2</option>
-                                                <option value="3">Opção 3</option>
+                                                <option value="1">Receba em até 1 dia útil</option>
+                                                <option value="2">Receba em 2 dias úteis</option>
+                                                <option value="3">Entrega agendada</option>
+                                                <option value="4">Receba em 5 horas</option>
                                             </select>
                                         </div>
 
                                         <div class="d-flex flex-column align-items-center mb-2 flex-sm-row gap-sm-3 mb-sm-0 mt-sm-2 me-sm-1">
                                             <label for="valor_entrega" class="mb-2 mb-sm-0">Valor:</label>
-                                            <input type="number" name="valor_entrega" id="valor_entrega" readonly>
+                                            <input type="text" name="valor_entrega" id="valor_entrega" readonly>
                                         </div>
 
                                     </div>
 
                                     <div class="d-flex flex-column align-items-center my-2 mx-3 flex-sm-row align-items-sm-center mt-sm-0">
                                         <label for="quem_recebe" class="mb-2 text-nowrap mb-sm-0 ms-sm-1">Quem irá receber?</label>
-                                        <input type="text" name="quem_recebe" id="quem_recebe" class="mx-sm-3">
-                                        <button class="my-3 text-nowrap me-sm-1 btn_action">Alterar Recebedor</button>
+                                        <input type="text" name="quem_recebe" id="quem_recebe" class="mx-sm-3" value="Gabriel" readonly>
+                                        <button class="my-3 text-nowrap me-sm-1 btn_action btn-alterar">Alterar Recebedor</button>
                                     </div>
 
                                 </div>
@@ -220,19 +221,18 @@
                                     
                                     <div class="d-flex flex-column align-items-center my-2 mx-3 flex-sm-row">
                                         <label for="opcao_retirada" class="mb-2 text-nowrap mb-sm-0 ms-sm-1">Opção de retirada:</label>
-                                        <input type="text" name="opcao_retirada" id="opcao_retirada" class="mx-sm-3">
-                                        <button class="my-3 text-nowrap me-sm-1 btn_action">Agendar retirada</button>
+                                        <input type="text" name="opcao_retirada" id="opcao_retirada" class="mx-sm-3" value="Retirada na loja" readonly>
+                                        <button id="btn_agendar_retirada" class="my-3 text-nowrap me-sm-1 btn_action">Agendar retirada</button>
                                     </div>
 
                                     <div class="d-flex flex-column align-items-center mx-3 flex-sm-row gap-sm-5">
                                         <label for="escolher_loja" class="text-nowrap ms-sm-1 mb-sm-3">Escolha a loja:</label>
                                         <select name="escolher_loja" id="escolher_loja" class="mt-2 mb-4 me-sm-1">
                                             <option value="0" disabled selected>Selecione uma opção...</option>
-                                            <option value="1">Loja 1</option>
-                                            <option value="2">Loja 2</option>
-                                            <option value="3">Loja 3</option>
-                                            <option value="4">Loja 4</option>
-                                            <option value="5">Loja 5</option>
+                                            <option value="1">Loja Swift Jardim Prudência</option>
+                                            <option value="2">Loja Swift SBC (Planalto)</option>
+                                            <option value="3">Loja Swift SBC Rudge Ramos</option>
+                                            <option value="4">Loja Swift São Caetano (Centro)</option>
                                         </select>
                                     </div>
 
@@ -253,6 +253,39 @@
             </div>
 
         </section>
+
+        <div id="modalRetirada" class="d-none modal__retirada">
+            <div class="d-flex flex-column position-relative modal__conteudo">
+
+                <button id="fecharIcone" class="btn__fechar__icone">✖</button>
+
+                <h4 class="mb-3">Agendar Retirada</h4>
+
+                <p><strong>Loja selecionada:</strong> <span id="lojaSelecionada"></span></p>
+
+                <label for="data_retirada" class="mt-3">Data de Retirada:</label>
+                <select id="data_retirada" name="data_retirada">
+                    <option value="" disabled selected>Selecione uma data...</option>
+                    <option value="2025-09-23">23/09/2025</option>
+                    <option value="2025-09-24">24/09/2025</option>
+                    <option value="2025-09-25">25/09/2025</option>
+                </select>
+
+                <label for="horario_retirada" class="mt-3">Horário de Retirada:</label>
+                <select id="horario_retirada" name="horario_retirada">
+                    <option value="" disabled selected>Selecione um horário...</option>
+                    <option value="09:00">09:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="18:00">18:00</option>
+                </select>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <button id="btnSalvarRetirada" class="btn__salvar_informacoes">Salvar</button>
+                </div>
+
+            </div>
+        </div>
         
     </main>
 
@@ -325,6 +358,8 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous">
     </script>
+
+    <script src="../../js/pages/checkout_usuario/entrega_e_recebimento.js"></script>
 
 </body>
 </html>

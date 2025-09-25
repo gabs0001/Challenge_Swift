@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Cadastro de Visitante</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,97 +34,71 @@
                 <a href="../index.html">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Logotipo da Swift" class="header__container_logo" aria-hidden="true">
                 </a>
-                <h1 id="titulo__cadastro">Realize seu cadastro para continuar!</h1>
+                <h1 id="titulo__cadastro">Insira algumas informações para continuar!</h1>
             </div>
         </nav>
     </header>
 
     <main class="row justify-content-center main__container">
 
-        <section class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 main__container_section" aria-labelledby="info_usuario">
-           
-            <h2 id="info_usuario" class="mt-4">Insira suas informações para criar sua conta:</h2>
+        <section class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-4 main__container_section" aria-labelledby="info_visitante">
+            
+            <h2 id="info_visitante" class="mt-4">Acesso como visitante:</h2>
             <hr/>
 
             <form action="#" method="post">
 
                 <fieldset>
-                    <legend class="visually-hidden">Dados de cadastro</legend>
+
+                    <legend class="visually-hidden">Dados do visitante</legend>
 
                     <div class="mt-4 px-1">
-                        <label for="telefone_usuario">Telefone:</label>
-                        <input 
-                            type="tel"
-                            id="telefone_usuario"
-                            name="telefone_usuario"
-                            placeholder="informe o número do seu telefone" 
-                            class="mt-1"
-                            aria-describedby="telefone__info"
-                            required
-                        ">
-                        <small class="visually-hidden telefone__info">informe o número do seu telefone</small>
-                    </div>
-
-                    <div class="mt-3 px-1">
-                        <label for="cpf_usuario">CPF:</label>
+                        <label for="nome_visitante">Nome:</label>
                         <input 
                             type="text"
-                            id="cpf_usuario"
-                            name="cpf_usuario"
-                            placeholder="informe o número do seu cpf" 
+                            id="nome_visitante"
+                            name="nome_visitante"
+                            placeholder="informe seu nome completo" 
                             class="mt-1"
-                            aria-describedby="cpf__info"
+                            aria-describedby="nome__info"
                             required
-                        ">
-                        <small class="visually-hidden cpf__info">informe o número do seu cpf</small>
+                            data-login
+                        >
+                        <small class="visually-hidden nome__info">informe seu nome completo</small>
                     </div>
 
                     <div class="mt-3 px-1">
-                        <label for="email_usuario">Email:</label>
+                        <label for="email_visitante">Email:</label>
                         <input 
                             type="email"
-                            id="email_usuario"
-                            name="email_usuario" 
+                            id="email_visitante"
+                            name="email_visitante" 
                             placeholder="informe seu melhor email" 
                             class="mt-1"
                             aria-describedby="email__info"
                             required
-                        ">
+                            data-login
+                        >
                         <small class="visually-hidden email__info">informe seu melhor email</small>
                     </div>
 
                     <div class="mt-3 px-1">
-                        <label for="senha_usuario">Senha:</label>
+                        <label for="telefone_visitante">Telefone:</label>
                         <input 
-                            type="password" 
-                            id="senha_usuario"
-                            name="senha_usuario" 
-                            placeholder="informe sua senha" 
+                            type="tel"
+                            id="telefone_visitante"
+                            name="telefone_visitante"
+                            placeholder="informe seu telefone (opcional)" 
                             class="mt-1"
-                            aria-describedby="senha__info"
-                            required
+                            aria-describedby="telefone__info"
                         >
-                        <small class="visually-hidden senha__info">informe sua senha</small>
-                    </div>
-
-                    <div class="mt-3 px-1">
-                        <label for="confirma_senha_usuario">Confirme sua senha:</label>
-                        <input 
-                            type="password" 
-                            id="confirma_senha_usuario"
-                            name="confirma_senha_usuario" 
-                            placeholder="informe novamente sua senha" 
-                            class="mt-1"
-                            aria-describedby="confirmar__senha"
-                            required
-                        >
-                        <small class="visually-hidden confirmar__senha">informe novamente sua senha</small>
+                        <small class="visually-hidden telefone__info">informe seu telefone (opcional)</small>
                     </div>
 
                 </fieldset>
 
                 <div class="d-flex justify-content-center mt-5 mb-4">
-                    <button class="btn__salvar">Salvar</button>
+                    <button id="btn__entrar" class="btn__entrar">Entrar</button>
                 </div>
 
             </form>
@@ -193,6 +167,8 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous">
     </script>
+
+    <script type="module" src="../../js/main.js"></script>
 
 </body>
 </html>

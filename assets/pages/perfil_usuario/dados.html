@@ -32,7 +32,7 @@
                         flex-sm-row justify-content-sm-between
                         px-md-0 header__container_menu
             ">
-                <a href="#">
+                <a href="../index.html">
                     <img src="/assets/images/logo/logo-swift.svg" alt="Voltar a página de perfil do usuário" class="header__container_logo">
                 </a>
                 <h1 id="titulo__dados">Aqui você pode visualizar seus endereços, cartões e telefones!</h1>
@@ -163,7 +163,7 @@
 
             <section class="row justify-content-center justify-content-xxl-evenly">
 
-                <section class="col-xxl-5 px-4 px-sm-5 main__container_meus_enderecos" aria-labelledby="info_endereco">
+                <section class="col-xxl-5 px-4 px-sm-5 main__container_meus_enderecos text-center" aria-labelledby="info_endereco">
                     <h2 id="info_endereco" class="mt-4">Meus Endereços</h2>
                     <hr class="divider__dados_enderecos"/>
 
@@ -184,11 +184,8 @@
                             <i aria-label="Favoritar endereço" class="fa-regular fa-star icon__color"></i>
                         </div>
                     </div>
-
-                    <div
-                        id="segundo__card"
-                        class="d-flex flex-column align-items-center py-3 m-4 mx-sm-5 card__enderecos
-                    ">
+                    
+                    <div class="d-flex flex-column align-items-center py-3 m-4 mx-sm-5 card__enderecos">
                         <h5>Trabalho</h5>
                         <hr class="divider__dados_card_enderecos"/>
                         <p class="mt-2 mt-xxl-2">Rua teste, N° 321, Bairro teste</p>
@@ -201,23 +198,21 @@
                     </div>
                     <!-- fim cards de endereço -->
                     
-                    <div class="d-flex justify-content-center my-3">
-                        <button class="btn__adicionar">Novo Endereço</button>
-                    </div>
+                    <button class="mb-4 btn__adicionar" data-tipo="endereco">Novo Endereço</button>
 
                 </section>
     
                 <section class="mt-4 mt-xxl-0 col-sm-10 col-lg-9 col-xxl-6" aria-labelledby="info_contato">
                     <h2 id="info_contato" class="visually-hidden">Meus cartões e telefones</h2>
                     
-                    <div class="main__container_conteudo">
+                    <div class="main__container_conteudo text-center">
                         <h2 class="mt-4">Meus Cartões</h2>
                         <hr class="divider__dados_contato"/>
                         
                         <div class="d-xxl-flex justify-content-xxl-evenly px-sm-5">    
                             <!-- card cartões -->
                             <div 
-                                class="d-flex flex-column align-items-center mx-5 mt-4 p-3 mt-xxl-4 mx-xxl-0 card__cartoes" 
+                                class="d-flex flex-column align-items-center mx-5 mt-4 p-3 mx-xxl-0 card__cartoes" 
                                 aria-labelledby="cartoes__cadastrados"
                             >
                                 <h2 id="cartoes__cadastrados" class="visually-hidden">Cards de cartões cadastrados</h2>
@@ -243,15 +238,14 @@
                                 </div>
                             </div>
                             <!-- fim card cartões -->
+
                         </div>
-                        
-                        <div class="d-flex justify-content-center my-4 d-xxl-flex justify-content-xxl-center my-xxl-4">
-                            <button class="btn__adicionar">Novo Cartão</button>
-                        </div>
+
+                        <button class="my-4 btn__adicionar" data-tipo="cartao">Novo Cartão</button>
 
                     </div>
                     
-                    <div class="mt-4 main__container_conteudo mt-xxl-5">
+                    <div class="mt-4 mt-xxl-5 text-center main__container_conteudo">
                         <h2 class="mt-4">Meus Telefones</h2>
                         <hr class="divider__dados_contato"/>
 
@@ -289,11 +283,10 @@
                                 </div>
                             </div>
                             <!-- fim card telefones -->
+
                         </div>
 
-                        <div class="d-flex justify-content-center my-4">
-                            <button class="btn__adicionar">Novo Telefone</button>
-                        </div>
+                        <button class="my-4 btn__adicionar" data-tipo="telefone">Novo Telefone</button>
 
                     </div>
 
@@ -302,6 +295,33 @@
             </section>
 
         </div>
+
+        <!-- janela popup de adição -->
+        <div id="popupOverlay" class="popup__overlay d-none">
+            <div class="popup__container">
+                <button class="popup__close" aria-label="Fechar popup">&times;</button>
+                <h3 id="popupTitle" class="text-center">Novo Item</h3>
+                <form id="popupForm" class="d-flex flex-column">
+                    <!-- Campos dinâmicos inseridos via JS -->
+                    <div class="popup__campos"></div>
+                    <button type="submit" class="mt-4 align-self-center btn__adicionar_elemento">Adicionar</button>
+                </form>
+            </div>
+        </div>
+        <!-- fim janela popup de adição -->
+
+        <!-- janela popup de edição -->
+        <div id="popupEditOverlay" class="popup__overlay d-none">
+            <div class="popup__container">
+                <button class="popup__close" aria-label="Fechar popup edição">&times;</button>
+                <h3 id="popupEditTitle" class="text-center">Editar Item</h3>
+                <form id="popupEditForm" class="d-flex flex-column">
+                    <div class="popup__campos"></div>
+                    <button type="submit" class="mt-4 align-self-center btn__salvar_elemento">Salvar</button>
+                </form>
+            </div>
+        </div>
+        <!-- janela popup de edição -->
         
     </main>
 
@@ -365,6 +385,8 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous">
     </script>
+
+    <script type="module" src="../../js/pages/perfil_usuario/dados.js"></script>
 
 </body>
 </html>

@@ -78,6 +78,7 @@ input {
     width: 100%;
     height: 2.4rem;
     padding: 0 .4rem;
+    font-size: 1rem;
 }
 
 hr {
@@ -103,5 +104,3 @@ button {
 #conteudo__principal { margin-top: 2.4rem !important; }
 
 #primeira__divisoria { background-color: #000; }
-
-/* media queries de font-size */

@@ -21,12 +21,14 @@
 .btn__login, 
 .btn__comprar,
 .btn__adicionar,
+.btn__adicionar_elemento,
 .btn__action,
 .btn__validacao,
-.btn__salvar_alteracoes,
+.btn__salvar_alteracoes_pedido,
 .btn_finalizar,
 .btn__salvar_info,
-.btn__salvar {
+.btn__salvar,
+.btn__entrar {
     background-color: var(--btn-orange);
 }
 
@@ -34,6 +36,7 @@
 .btn__detalhes,
 .btn__editar,
 .btn__salvar_alteracoes,
+.btn__salvar_elemento,
 .btn__aplicar_desconto,
 .btn__usar_cashback,
 .btn_qrcode,
@@ -51,13 +54,16 @@
 .btn__login,
 .btn__salvar_alteracoes,
 .btn__salvar_alteracoes_pedido,
-.btn__salvar {
+.btn__salvar,
+.btn__entrar {
     width: var(--btn-lg);
 }
 
 .btn__detalhes, 
 .btn__comprar,
 .btn__adicionar,
+.btn__adicionar_elemento,
+.btn__salvar_elemento,
 .btn__action,
 .btn__validacao,
 .btn_finalizar,
@@ -68,8 +74,11 @@
 .btn__login, 
 .btn__visitante,
 .btn__adicionar,
+.btn__adicionar_elemento,
+.btn__salvar_elemento,
 .btn__salvar_alteracoes,
-.btn__salvar { 
+.btn__salvar,
+.btn__entrar { 
     padding: .6rem; 
 }
 /* fim css compartilhado */
@@ -93,6 +102,13 @@
   flex-shrink: 0;
   object-fit: contain;
   filter: brightness(0) invert(1);
+}
+
+.btn__visitante {
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1.4rem;
 }
 /* fim login.css */
 

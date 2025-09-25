@@ -10,6 +10,7 @@ h2 { font-weight: 600; }
 .excluir__pedido img {
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 .resumo__pedido, .programa__fidelidade {
@@ -34,12 +35,14 @@ h2 { font-weight: 600; }
 .excluir__item img {
     width: 1.4rem;
     height: 1.4rem;
+    cursor: pointer;
 }
 
-#campo__desconto {
-    border: 1px solid #ddd;
-    width: 40%;
-}
+.campo__pontos, .indicador_qtde { border: 1px solid rgba(0, 0, 0, .2); }
+
+.campo__pontos { width: 40%; }
+
+.indicador_qtde { width: 50%; }
 
 .divider__pontilhada {
     border: none;
@@ -49,9 +52,13 @@ h2 { font-weight: 600; }
 }
 
 .campo__pontos {
-    border: 1px solid #ddd;
     height: 2rem;
     width: 5.8rem;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 @media (min-width: 1400px) {
