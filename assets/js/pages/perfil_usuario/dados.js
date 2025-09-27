@@ -32,4 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('popupEditForm').reset();
   });
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> a3817cba5d68d0ea16915e4ac13afcd05471bea3
